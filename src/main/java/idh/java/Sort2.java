@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Sort2 {
+
 	
 	public static int compare(int i1, int i2) {
 		if (i1 < i2)
@@ -65,6 +66,12 @@ public class Sort2 {
 				
 	}
 	
+	
+	
+	public static void demoComparator(List<Student> list) {
+		list.sort(null);
+	}
+	
 	public static final void main(String[] args) {
 		List<Integer> arr = new ArrayList<Integer>();
 		arr.add(1);
@@ -82,6 +89,10 @@ public class Sort2 {
 		System.out.println(arr);
 		System.out.println(sort(arr));
 
+		
+		
+		
+		
 		largeListExperiment(10);
 		largeListExperiment(100);
 		largeListExperiment(1000);

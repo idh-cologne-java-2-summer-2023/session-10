@@ -15,44 +15,56 @@ public class Sort1 {
 	}
 	
 	public static int findInsertPosition(List<Integer> lst, int element) {
-		// TODO: Implement
+		for (int i = 0; i < lst.size(); i++) {
+			int cmp = compare(lst.get(i), element);
+			if (cmp > 0) {
+				return i;
+			}
+		}
 		return 0;
 	}
 	
 	public static List<Integer> sort(List<Integer> array) {
-		// TODO: Implement
-		return null;
+		ArrayList<Integer> returnList = new ArrayList<Integer>(array.size());
+		for (int i = 0; i < array.size(); i++) {
+			int element = array.get(i);
+			if (returnList.isEmpty()) {
+				returnList.add(element);
+			} else {
+				returnList.add(findInsertPosition(returnList, element), element);
+			}
+		}
+		return returnList;
 	}
 	
 	
 	public static final void main(String[] args) {
-		List<Integer> arr = new ArrayList<Integer>();
-		arr.add(1);
-		arr.add(2);
-		arr.add(3);
+//		List<Integer> arr = new ArrayList<Integer>();
+//		arr.add(1);
+//		arr.add(2);
+//		arr.add(3);
+//		
+//		System.out.println(arr);
+//		System.out.println(sort(arr));
+//		
+//		arr = new ArrayList<Integer>();
+//		arr.add(3);
+//		arr.add(1);
+//		arr.add(2);
+//		
+//		System.out.println(arr);
+//		System.out.println(sort(arr));
 		
-		System.out.println(arr);
-		System.out.println(sort(arr));
-		
-		arr = new ArrayList<Integer>();
-		arr.add(3);
-		arr.add(1);
-		arr.add(2);
-		
-		System.out.println(arr);
-		System.out.println(sort(arr));
+		largeListExperiment(10);
+		largeListExperiment(100);
+		largeListExperiment(1000);
+		largeListExperiment(10000);
+		largeListExperiment(100000);
+		largeListExperiment(1000000);
+		largeListExperiment(10000000);
 		
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	public static void largeListExperiment(int n) {
 		long start;

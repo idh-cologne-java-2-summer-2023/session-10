@@ -1,0 +1,15 @@
+Sort1 a list with 10 = 1e+01 random elements: 0ms.
+Sort1 a list with 100 = 1e+02 random elements: 1ms.
+Sort1 a list with 1000 = 1e+03 random elements: 3ms.
+Sort1 a list with 10000 = 1e+04 random elements: 22ms.
+Sort1 a list with 100000 = 1e+05 random elements: 1647ms.
+Sort1 a list with 1000000 = 1e+06 random elements: 331508ms.
+
+
+Sort2 a list with 10 = 1e+01 random elements: 0ms.
+Sort2 a list with 100 = 1e+02 random elements: 0ms.
+Sort2 a list with 1000 = 1e+03 random elements: 2ms.
+Sort2 a list with 10000 = 1e+04 random elements: 9ms.
+Sort2 a list with 100000 = 1e+05 random elements: 100ms.
+Sort2 a list with 1000000 = 1e+06 random elements: 1126ms.
+Sort2 a list with 10000000 = 1e+07 random elements: 7140ms.
