@@ -103,7 +103,7 @@ public class Sort2 {
 		}
 		
 		start = System.currentTimeMillis();
-		List<Integer> listSorted = sort(list);
+		sort(list);
 		System.out.printf("Sort2 a list with %d = %1.0e random elements: %dms.%n", n, (double)n, (System.currentTimeMillis()-start));
 
 	}
